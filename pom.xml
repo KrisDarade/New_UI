@@ -14,14 +14,14 @@
     <description>Single Sign On (SSO) into Jira using any OAuth 2.0, OpenID, OpenID Connect (OIDC) compliant applications like Google Apps, ADFS, AWS Cognito, Azure AD, Azure B2C, Keycloak, GitHub, GitHub Enterprise, GitLab, Slack, Discord, Windows, Meetup, Salesforce, Okta and many more. You can login to Jira using any OAuth/OpenID/OIDC provider with custom OAuth and OpenID apps.</description>
     <packaging>atlassian-plugin</packaging>
     <dependencies>
-		
-		<!-- Import dependencies from the common module-->
-		<dependency>
+        
+        <!-- Import dependencies from the common module-->
+        <dependency>
             <groupId>com.miniorange.oauth</groupId>
             <artifactId>common-oauth</artifactId>
             <version>1.0.0</version>
         </dependency>
-		
+        
         <dependency>
             <groupId>com.atlassian.jira</groupId>
             <artifactId>jira-api</artifactId>
@@ -174,7 +174,7 @@
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20171018</version>
+            <version>20180130</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -200,8 +200,8 @@
         </dependency>
         -->
     </dependencies>
-	
-	<parent>
+    
+    <parent>
         <groupId>com.miniorange.oauth</groupId>
         <artifactId>oauth-sso-parent</artifactId>
         <version>1.0.0</version>
@@ -228,7 +228,7 @@
                     </pluginArtifacts>
                     -->
                     <enableQuickReload>true</enableQuickReload>
-					<!--<enableFastdev>false</enableFastdev> -->
+                    <!--<enableFastdev>false</enableFastdev> -->
                     <!-- See here for an explanation of default instructions: -->
                     <!-- https://developer.atlassian.com/docs/advanced-topics/configuration-of-instructions-in-atlassian-plugins -->
                     <!--<instructions>
@@ -273,6 +273,7 @@
             </plugin>
         </plugins>
     </build>
+    
     <properties>
         <jira.version>7.13.0</jira.version>
         <amps.version>8.0.0</amps.version>
